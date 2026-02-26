@@ -39,7 +39,6 @@ function ProjectCards(props) {
     📄 Report
   </Button>
 )}
-        )}
       </Card.Body>
     </Card>
   );
