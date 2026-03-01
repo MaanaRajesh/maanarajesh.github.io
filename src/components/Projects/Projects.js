@@ -54,7 +54,7 @@ function Projects() {
               imgPath={f1tenthImg}
               isBlog={false}
               title="F1TENTH Autonomous Racing (ROS 2)"
-              description="Developing and testing ROS 2 perception–planning–control components under real-time constraints, with sim-to-real workflows and safety-focused integration."
+              description="Developing and testing ROS2 perception–planning–control components under real-time constraints, with sim-to-real workflows and safety-focused integration."
               ghLink="https://github.com/cedrichld/f1tenth_system_team5/tree/humble-devel/f1tenth_stack"
             />
           </Col>
