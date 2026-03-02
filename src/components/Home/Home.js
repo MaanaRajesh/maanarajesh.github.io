@@ -55,45 +55,45 @@ function Home() {
           <p style={{ color: "white" }}>
             Want to collaborate or chat? Reach out anytime.
           </p>
-        <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=maanasa@seas.upenn.edu"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                  aria-label="Email"
-                >
-                  <AiOutlineMail />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://github.com/MaanaRajesh/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                  aria-label="GitHub"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/maanasa-rajeshwer/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+          <ul className="home-about-social-links">
+            <li className="social-icons">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=maanasa@seas.upenn.edu"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour home-social-icons"
+                aria-label="Email"
+              >
+                <AiOutlineMail />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://github.com/MaanaRajesh/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
+                aria-label="GitHub"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/maanasa-rajeshwer/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
+    </section >
   );
 }
 
