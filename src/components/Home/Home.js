@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.jpeg";
+import homeLogo from "../../Assets/home-humanrobot.jpeg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
 import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -15,21 +14,13 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> MAANASA RAJESHWER</strong>
+                MAANASA RAJESHWER
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
+              <p className="hero-subtitle">
+                Engineering embodied intelligence, grounded in human intuition.
+              </p>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -43,6 +34,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
       <Home2 />
 
       <Container>
@@ -51,8 +43,9 @@ function Home() {
             Contact <span className="purple">Me</span>
           </h1>
           <p style={{ color: "white" }}>
-            Want to collaborate or chat? Reach out anytime.
+            Want to collaborate or chat? Please reach out!
           </p>
+
           <ul className="home-about-social-links">
             <li className="social-icons">
               <a
@@ -65,23 +58,25 @@ function Home() {
                 <AiOutlineMail />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="https://github.com/MaanaRajesh/"
                 target="_blank"
                 rel="noreferrer"
-                className="icon-colour  home-social-icons"
+                className="icon-colour home-social-icons"
                 aria-label="GitHub"
               >
                 <AiFillGithub />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/maanasa-rajeshwer/"
                 target="_blank"
                 rel="noreferrer"
-                className="icon-colour  home-social-icons"
+                className="icon-colour home-social-icons"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
@@ -90,7 +85,7 @@ function Home() {
           </ul>
         </Row>
       </Container>
-    </section >
+    </section>
   );
 }
 

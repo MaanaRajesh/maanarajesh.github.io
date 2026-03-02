@@ -134,7 +134,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: var(cream);
+  background: var(--cream);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -186,8 +186,10 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 42px !important;
+  width: 42px !important;
+  object-fit: contain;
+  display: block;
 }
 
 .navbar-nav .nav-link {
@@ -281,8 +283,10 @@ button:focus {
   height: 100%;
 }
 
+/* Constrain hero width */
 .home-header {
-  padding-top: 80px !important;
+  max-width: 620px;
+  padding-top: 120px !important;
 }
 
 .home-section {
@@ -296,9 +300,29 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  padding: 12rem 0 4rem !important;
   text-align: left;
+}
+
+/* Subtitle styling */
+.hero-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(245, 236, 171, 0.85); /* softer cream */
+  max-width: 480px;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heading {
@@ -306,13 +330,18 @@ button:focus {
   padding-left: 50px !important;
 }
 
+/* Name styling */
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 3.2rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  line-height: 1.1;
+  padding-left: 0 !important;
 }
 
 .main-name {
-  color: var(cream);
+  color: var(--cream);
 }
 
 .Typewriter__wrapper {
