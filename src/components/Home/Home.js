@@ -90,9 +90,8 @@ function Home() {
               </a>
             </li>
           </ul>
-        </Col>
-      </Row>
-    </Container>
+        </Row>
+      </Container>
     </section >
   );
 }
