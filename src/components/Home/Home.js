@@ -4,9 +4,7 @@ import homeLogo from "../../Assets/home-main.jpeg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import {
-  AiFillGithub
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
@@ -58,7 +56,7 @@ function Home() {
           <ul className="home-about-social-links">
             <li className="social-icons">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=maanasa@seas.upenn.edu"
+                href="mailto:maanasa@seas.upenn.edu"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"
