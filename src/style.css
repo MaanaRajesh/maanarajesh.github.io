@@ -1,5 +1,4 @@
 html {
-  /* new palette */
   --rust: #95380D;
   --olive: #C6BA4C;
   --cream: #F5ECAB;
@@ -9,7 +8,7 @@ html {
   /* roles */
   --accent: var(--clay);
   --accent-2: var(--olive);
-  --text-accent: var(--cream);
+  --text-accent: var(--rust);
 
   /* backgrounds */
   --section-background-color: linear-gradient(
@@ -25,7 +24,7 @@ html {
   );
 
   /* replaces old purple */
-  --imp-text-color: var(--accent);
+  --imp-text-color: var(--clay);
 }
 
 
@@ -78,18 +77,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: rgba(71, 15, 12, 0.35);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(200, 120, 57, 0.85);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(149, 56, 13, 0.90);
   border-radius: 12px;
 }
 
@@ -118,7 +117,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--rust) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -126,6 +125,20 @@ button:focus {
   transform: rotate(0deg) !important;
   left: 0 !important;
   opacity: 1 !important;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: var(cream);
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
 }
 
 .navbar-toggler:focus,
@@ -166,9 +179,6 @@ button:focus {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
-  }
-  .navbar-nav .nav-item a::after {
-    display: none !important;
   }
 }
 .navbar-brand {
@@ -215,7 +225,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--cream);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -302,17 +312,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(cream);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--accent-2) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--accent-2) !important;
 }
 
 @media (max-width: 767px) {
@@ -392,7 +402,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: var(--olive);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -400,13 +410,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px rgba(200, 120, 57, 0.45);
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--maroon);
+  box-shadow: 0 0 8px rgba(198, 186, 76, 0.35);
+  text-shadow: none;
 }
 
 .social-icons {
@@ -416,14 +426,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: var(--rust) !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgba(71, 15, 12, 0.95);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -460,7 +470,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: rgba(245, 236, 171, 0.75) !important;
 }
 /* --------- */
 /* Projects */
@@ -481,7 +491,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(71, 15, 12, 0.35) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -491,7 +501,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(200, 120, 57, 0.35) !important;
 }
 
 .blog-card {
@@ -504,7 +514,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(71, 15, 12, 0.30) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -522,7 +532,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(200, 120, 57, 0.40) !important;
 }
 
 .card-img-top {
@@ -538,15 +548,14 @@ button:focus {
 }
 
 .btn-primary {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: var(--rust) !important;
+  border-color: var(--rust) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -556,7 +565,7 @@ button:focus {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;\
+  padding-top: 10px !important;
 }
 
 .project-card-text {
@@ -585,11 +594,11 @@ button:focus {
   margin: 15px !important;
   padding: 10px 20px !important;
   opacity: 0.93 !important;
-  outline: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 24px !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  outline: 1.7px solid rgba(198, 186, 76, 0.55) !important; /* olive */
+  box-shadow: 4px 5px 4px 3px rgba(71, 15, 12, 0.20) !important; /* maroon */
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
   width: fit-content !important;
@@ -614,7 +623,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  outline: 2.2px solid rgba(200, 120, 57, 0.70) !important;
 }
 .tech-icon-images {
   height: 1.6rem;
@@ -685,14 +694,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid rgba(198, 186, 76, 0.6);
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: rgba(71, 15, 12, 0.35);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -722,7 +731,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid rgba(198, 186, 76, 0.8);
 }
 
 .like-item {
@@ -732,8 +741,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: var(--rust) !important;
+  border-color: var(--rust) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -742,8 +751,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
 }
 
 .animate-like {
@@ -767,7 +776,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: var(--rust) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -775,8 +784,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
 }
 .fork-btn-inner::after {
   display: none !important;
