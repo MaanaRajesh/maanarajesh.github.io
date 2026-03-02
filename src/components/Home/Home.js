@@ -48,19 +48,32 @@ function Home() {
       <Home2 />
 
       <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
+        <Row className="home-about-social">
+          <h1 style={{ paddingTop: "40px" }}>
+            Contact <span className="purple">Me</span>
+          </h1>
+          <p style={{ color: "white" }}>
+            Want to collaborate or chat? Reach out anytime.
+          </p>
+        <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=maanasa@seas.upenn.edu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="Email"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/MaanaRajesh/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -71,6 +84,7 @@ function Home() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
