@@ -568,38 +568,52 @@ button:focus,
   color: white !important;
 }
 
+/* =========================
+   Tech / Tool Icons (Inline SVG)
+   ========================= */
+
 .tech-icons {
   display: flex !important;
-  align-self: center !important;
-  justify-content: center !important;
-  font-size: 1rem !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   margin: 15px !important;
   padding: 10px 20px !important;
-  opacity: 0.93 !important;
-  vertical-align: middle !important;
-  text-align: center !important;
   border-radius: 24px !important;
 
-  outline: 1.7px solid rgba(198, 186, 76, 0.55) !important;
-  box-shadow: 4px 5px 4px 3px rgba(71, 15, 12, 0.20) !important;
+  outline: 1.7px solid rgba(198, 186, 76, 0.55) !important; /* olive */
+  box-shadow: 4px 5px 4px 3px rgba(71, 15, 12, 0.20) !important; /* maroon */
 
-  overflow: hidden !important;
-  width: fit-content !important;
-  cursor: pointer !important;
-  transition: outline-color 0.3s, outline-width 0.3s, transform 0.3s;
-  color: white;
+  /* makes SVG icons inherit this color */
+  color: rgba(245, 236, 171, 0.88); /* cream */
+
+  transition: transform 0.25s ease, outline-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  outline: 2.2px solid rgba(200, 120, 57, 0.70) !important;
+  transform: translateY(-3px) scale(1.03);
+  outline-color: rgba(200, 120, 57, 0.75) !important; /* clay */
+  box-shadow: 0 12px 28px rgba(200, 120, 57, 0.30) !important;
+}
+
+.tech-icon-svg {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: block;
+
+  /* critical: let the SVG inherit color */
+  color: inherit;
 }
 
 .tech-icons-text {
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  color: white;
+  margin-left: 2px;
+  color: rgba(245, 236, 171, 0.92);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 .tech-icon-images {
