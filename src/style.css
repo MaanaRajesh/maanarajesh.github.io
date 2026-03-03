@@ -603,8 +603,27 @@ button:focus,
   flex: 0 0 28px;
   display: block;
 
-  /* critical: let the SVG inherit color */
-  color: inherit;
+  color: var(--cream);
+}
+
+/* Tech / tool icons: consistent sizing */
+.tech-icon-svg,
+.tech-icon-img {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: block;
+}
+
+/* SVGs inherit theme color if their paths use currentColor */
+.tech-icon-svg {
+  color: var(--cream);
+}
+
+/* PNGs: optional “tinted” look (adjust if you hate it) */
+.tech-icon-img {
+  object-fit: contain;
+  filter: brightness(0) invert(1) opacity(0.9);
 }
 
 .tech-icons-text {
