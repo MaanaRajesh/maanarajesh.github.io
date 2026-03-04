@@ -11,8 +11,8 @@ html {
   --maroon: #470F0C;
 
   /* roles */
-  --accent: var(--clay);
-  --accent-2: var(--olive);
+  --accent: var(--olive);
+  --accent-2: var(----maroon);
   --text-accent: var(--rust);
   --imp-text-color: var(--clay);
 
