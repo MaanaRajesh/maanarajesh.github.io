@@ -50,17 +50,31 @@ html {
   --serif-spacing: 0.04em;
 }
 
+#root, .App {
+  background: transparent !important;
+}
+
 body {
-  background: var(--page-bg);
   font-family: var(--serif);
   letter-spacing: var(--serif-spacing);
-}
 
-/* Reduce the purple tint from the particles layer */
-#tsparticles {
-  opacity: var(--stars-opacity);
-}
+  /* GLOBAL cream texture background */
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(245, 236, 171, 0.08),
+      rgba(245, 236, 171, 0.06)
+    ),
+    url(./Assets/creamtexture.jpg);
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps it consistent while scrolling */
+
+  /* fallback if image fails */
+  background-color: var(--page-bg);
+}
 
 /* helper class kept for compatibility with template */
 .purple {
@@ -224,7 +238,7 @@ button:focus,
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: var(--cream);
+  background: var(--maroon);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -255,8 +269,11 @@ button:focus,
   position: fixed !important;
   width: 100%;
   height: 100%;
+  inset: 0;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  opacity: var(--stars-opacity);
+  pointer-events: none;
 }
 
 /* =========================================================
@@ -265,17 +282,14 @@ button:focus,
 
 .home-section {
   position: relative;
-  z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/creamtexture.jpg); */
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding: 30px 0 !important;
+  z-index: 0;
+  background: transparent;
 }
 
 .home-content {
   padding: 12rem 0 4rem !important;
   text-align: left;
-  color: whitesmoke;
+  color: maroon;
 }
 
 /* wave (optional - safe to delete if you remove emoji) */
@@ -315,7 +329,7 @@ button:focus,
 }
 
 .main-name {
-  color: var(--cream);
+  color: var(--clay);
 }
 
 /* Subtitle styling + fade up */
@@ -431,7 +445,7 @@ button:focus,
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--maroon) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -480,7 +494,7 @@ button:focus,
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--cream) !important;
   margin: 0.5em 0 !important;
 }
 
@@ -501,7 +515,7 @@ button:focus,
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background: rgba(71, 15, 12, 0.55) !important;
 }
 
 .project-card {
@@ -527,7 +541,7 @@ button:focus,
 }
 
 .project-heading {
-  color: white !important;
+  color: var(--cream) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -541,9 +555,9 @@ button:focus,
 
 /* buttons */
 .btn-primary {
-  background-color: var(--accent) !important;
-  border-color: var(--accent) !important;
-  color: #fff !important;
+  background-color: var(--maroon) !important;
+  border-color: var(--cream) !important;
+  color: var(--maroon) !important;
 }
 
 .btn-primary:hover {
@@ -603,7 +617,8 @@ button:focus,
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  color: white !important;
+  color: maroon !important;
+  background: transparent !important;
 
   /* Cream texture background for ABOUT only */
   background-image:
