@@ -19,36 +19,32 @@ import gazeboPng from "../../Assets/TechIcons/gazebo.png";
 import dockerPng from "../../Assets/TechIcons/Docker.png";
 import gitPng from "../../Assets/TechIcons/github.png";
 
-/**
- * Add/remove items here only.
- * type: "Png" | "png"
- */
 const SECTIONS = [
   {
     title: "Core",
     items: [
-      { label: "Python", src: pythonPng, type: "png" },
-      { label: "C++", src: cppPng, type: "png" },
-      { label: "NumPy", src: numpyPng, type: "png" },
-      { label: "MLflow", src: mlflowPng, type:"png" },
-      { label: "OpenCV", src: opencvPng, type: "png" },
-      { label: "PyTorch", src: pytorchPng, type: "png" },
-      { label: "ROS2", src: ros2Png, type: "png" },
+      { label: "Python", src: pythonPng },
+      { label: "C++", src: cppPng },
+      { label: "NumPy", src: numpyPng },
+      { label: "OpenCV", src: opencvPng },
+      { label: "PyTorch", src: pytorchPng },
+      { label: "ROS2", src: ros2Png },
+      { label: "MLflow", src: mlflowPng },
     ],
   },
   {
     title: "Simulation",
     items: [
-      { label: "MuJoCo", src: mujocoPng, type: "png" },
-      { label: "Isaac Sim", src: isaacPng, type: "png" },
-      { label: "Gazebo", src: gazeboPng, type: "png" },
+      { label: "MuJoCo", src: mujocoPng },
+      { label: "Isaac Sim", src: isaacPng },
+      { label: "Gazebo", src: gazeboPng },
     ],
   },
   {
     title: "Infra",
     items: [
-      { label: "Docker", src: dockerPng, type: "png" },
-      { label: "Git", src: gitPng, type: "png" },
+      { label: "Docker", src: dockerPng },
+      { label: "Git", src: gitPng },
     ],
   },
 ];
@@ -57,19 +53,15 @@ function StackSection({ title, items }) {
   return (
     <>
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col xs={12} style={{ textAlign: "center" }}>
+        <Col xs={12}>
           <h3 className="stack-section-title">{title}</h3>
         </Col>
       </Row>
 
-      <Row style={{ justifyContent: "center", paddingBottom: "35px" }}>
+      <Row className="stack-grid" style={{ justifyContent: "center", paddingBottom: "35px" }}>
         {items.map((item) => (
-          <Col key={item.label} xs={6} md={3} className="tech-icons">
-            <img
-              src={item.src}
-              alt={item.label}
-              className={item.type === "png" ? "tech-icon-png" : "tech-icon-img"}
-            />
+          <Col key={item.label} xs={6} md={3} lg={2} className="tech-icons">
+            <img src={item.src} alt={item.label} className="tech-icon-img" />
             <div className="tech-icons-text">{item.label}</div>
           </Col>
         ))}
@@ -78,18 +70,12 @@ function StackSection({ title, items }) {
   );
 }
 
-function Techstack() {
+export default function Techstack() {
   return (
     <div>
       {SECTIONS.map((section) => (
-        <StackSection
-          key={section.title}
-          title={section.title}
-          items={section.items}
-        />
+        <StackSection key={section.title} title={section.title} items={section.items} />
       ))}
     </div>
   );
 }
-
-export default Techstack;

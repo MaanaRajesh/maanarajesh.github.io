@@ -341,6 +341,14 @@ button:focus,
   padding: 70px 0 !important;
 }
 
+.about-heading {
+  color: white;
+  font-size: 2.0em;
+  font-weight: 500;
+  margin: 18px 0 18px 0;
+  text-align: center;
+}
+
 .home-about-description {
   color: white !important;
   padding-top: 100px !important;
@@ -568,40 +576,84 @@ button:focus,
   color: white !important;
 }
 
-/* =========================
-   Tech / Tool Icons (Inline SVG)
-   ========================= */
+/* =========================================================
+   Tech + Tool stacks
+   ========================================================= */
 
+/* Adds clean spacing between wrapped rows */
+.stack-grid {
+  row-gap: 22px;
+}
+
+/* Section title above each stack section (Core / Simulation / Infra) */
+.stack-section-title {
+  font-size: 1.15rem;
+  margin: 10px 0 6px 0;
+  opacity: 0.9;
+  color: rgba(245, 236, 171, 0.92);
+  text-align: center;
+}
+
+/* Tile container */
 .tech-icons {
   display: flex !important;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 
-  margin: 15px !important;
-  padding: 10px 20px !important;
+  /* Bootstrap handles the outer spacing; we use row-gap instead */
+  margin: 0 !important;
+
+  /* Consistent tile size */
+  min-height: 150px;
+
+  padding: 14px 18px !important;
   border-radius: 24px !important;
 
-  outline: 1.7px solid rgba(198, 186, 76, 0.55) !important; /* olive */
-  box-shadow: 4px 5px 4px 3px rgba(71, 15, 12, 0.20) !important; /* maroon */
-
-  /* makes SVG icons inherit this color */
-  color: rgba(245, 236, 171, 0.88); /* cream */
+  outline: 1.7px solid rgba(198, 186, 76, 0.55) !important;
+  box-shadow: 4px 5px 4px 3px rgba(71, 15, 12, 0.20) !important;
 
   transition: transform 0.25s ease, outline-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tech-icons:hover {
   transform: translateY(-3px) scale(1.03);
-  outline-color: rgba(200, 120, 57, 0.75) !important; /* clay */
+  outline-color: rgba(200, 120, 57, 0.75) !important;
   box-shadow: 0 12px 28px rgba(200, 120, 57, 0.30) !important;
 }
 
-.stack-section-title {
-  font-size: 1.2rem;
-  margin: 12px 0 6px 0;
-  opacity: 0.9;
+/* Icon sizing */
+.tech-icon-img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
+
+/* Label under icon */
+.tech-icons-text {
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(245, 236, 171, 0.92);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+/* Optional: slightly smaller on phones */
+@media (max-width: 767px) {
+  .tech-icons {
+    min-height: 135px;
+  }
+  .tech-icon-img {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+
+
+
 
 .tech-icon-svg,
 .tech-icon-img {
@@ -612,23 +664,8 @@ button:focus,
   margin: 0 auto;
 }
 
-tech-icon-svg{
-  color: var(--cream)
-}
-
-/* PNGs: optional “tinted” look (adjust if you hate it) */
-.tech-icon-img {
-  object-fit: contain;
-  filter: brightness(0) invert(1) opacity(0.9);
-}
-
-.tech-icons-text {
-  display: flex;
-  align-items: center;
-  margin-left: 2px;
-  color: rgba(245, 236, 171, 0.92);
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
+.tech-icon-svg{
+  color: var(--cream);
 }
 
 .tech-icon-images {
