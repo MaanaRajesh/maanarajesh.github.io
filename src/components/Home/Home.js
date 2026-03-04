@@ -35,10 +35,10 @@ function Home() {
 
       <Container>
         <Row className="home-about-social">
-          <h1 style={{ paddingTop: "40px", color: "black" }}>
+          <h1 style={{ paddingTop: "40px", color: "black", fontSize: "2.8em", fontWeight: 600 }}>
             Contact Me
           </h1>
-          <p style={{ color: "var(--clay)" }}>
+          <p style={{ color: "var(--clay)", fontSize: "1.35em", marginBottom: "1.2rem" }}>
             Want to collaborate or chat? Please reach out!
           </p>
 

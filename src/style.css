@@ -459,11 +459,11 @@ button:focus,
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 54px !important;
+  height: 54px !important;
   text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
+  font-size: 1.5em !important;
+  line-height: 2.2em !important;
   background: var(--olive) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -566,14 +566,14 @@ button:focus,
 }
 
 /* Project card buttons: cream → olive on hover, black text */
-.project-btn {
+.project-card-view .project-btn {
   background-color: var(--cream) !important;
   color: black !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-.project-btn:hover {
+.project-card-view .project-btn:hover {
   background-color: var(--olive) !important;
   color: black !important;
   border: none !important;

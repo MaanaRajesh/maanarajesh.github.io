@@ -26,17 +26,24 @@ function About() {
             </Col>
           </Row>
 
-          <h2 className="project-heading" style={{ marginTop: "10px", color: "black" }}>
-            Professional Skillset
-          </h2>
-          <Techstack />
+          <div style={{
+            background: "rgba(149, 56, 13, 0.18)",
+            borderRadius: "18px",
+            padding: "28px 20px 36px",
+            marginTop: "30px",
+          }}>
+            <h2 className="project-heading" style={{ marginTop: "10px", color: "black" }}>
+              Professional Skillset
+            </h2>
+            <Techstack />
 
-          <h2 className="project-heading" style={{ marginTop: "30px" }}>
-            Tools I use
-          </h2>
-          <Toolstack />
+            <h2 className="project-heading" style={{ marginTop: "30px" }}>
+              Tools I use
+            </h2>
+            <Toolstack />
 
-          <Github />
+            <Github />
+          </div>
         </Container>
       </Container>
     </>
