@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="=https://maanarajesh-github-io.vercel.app/" target="_blank">maanarajesh.tech</a>
+  <a href="=https://maanarajesh-github-io.vercel.app/" target="_blank">maanasa-rajeshwer.vercel.app</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
