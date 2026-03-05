@@ -18,7 +18,7 @@
 
 <h2 align="center">
   Maanasa Rajeshwer — Portfolio<br/>
-  <a href="YOUR_VERCEL_URL" target="_blank">Live Site</a>
+  <a href="[YOUR_VERCEL_URL](https://maanarajesh-github-io.vercel.app/)" target="_blank">Live Site</a>
 </h2>
 
 ## About
