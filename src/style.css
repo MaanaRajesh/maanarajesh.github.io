@@ -858,6 +858,7 @@ button:focus,
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  filter: sepia(1) hue-rotate(-30deg) saturate(2.5) brightness(0.55);
 }
 
 /* If you ever add back inline SVG icons, keep them uniform too */

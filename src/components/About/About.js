@@ -27,7 +27,7 @@ function About() {
           </Row>
 
           <div data-aos="fade-up" style={{
-            background: "linear-gradient(to bottom, rgba(200, 120, 57, 0.25), rgba(149, 56, 13, 0.55))",
+            background: "rgba(200, 120, 57, 0.15)",
             borderRadius: "18px",
             padding: "28px 20px 36px",
             marginTop: "30px",
